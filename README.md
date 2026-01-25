@@ -16,7 +16,10 @@ yarn dev
 Abrir en el navegador:
 
 http://localhost:5173
-🧪 Ejecutar tests
+
+---
+
+### 🧪 Ejecutar tests
 Correr todos los tests:
 
 yarn test
