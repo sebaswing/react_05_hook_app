@@ -1,15 +1,14 @@
-# 🪝 Hooks App
+🪝 Hooks App
 
-Proyecto del curso de **React Hooks**.
+Proyecto del curso de React Hooks.
 
----
-
-## 🚀 Ejecutar el proyecto
+🚀 Ejecutar el proyecto
 
 Instalar dependencias:
 
-```bash
 yarn install
+
+
 Levantar el servidor de desarrollo:
 
 yarn run dev```
@@ -23,9 +22,13 @@ http://localhost:5173
 Correr todos los tests:
 
 yarn test
+
+
 Modo watch:
 
 yarn test --watch
+
+
 Ejecutar un test específico:
 
 yarn test GifExpertApp
@@ -33,6 +36,8 @@ yarn test GifExpertApp
 Generar build:
 
 yarn build
+
+
 Previsualizar build:
 
 yarn preview
