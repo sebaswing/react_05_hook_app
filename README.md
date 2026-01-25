@@ -44,12 +44,10 @@ yarn preview
 ```
 
 ## 📦 Tecnologías
-### React
 
-### Vite
-
-### Yarn
-
-### Jest
-
-### React Testing Library
+- ⚛️ **React**
+- ⚡ **Vite**
+- 🧶 **Yarn**
+- 🧪 **Testing**
+  - 🧫 **Jest**
+  - 🧰 **React Testing Library**
