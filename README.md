@@ -17,7 +17,7 @@ Abrir en el navegador:
 
 http://localhost:5173
 
-🧪 Ejecutar tests
+## 🧪 Ejecutar tests
 Correr todos los tests:
 
 yarn test
@@ -28,14 +28,15 @@ Ejecutar un test específico:
 
 yarn test GifExpertApp
 
-🏗️ Build de producción
+## 🏗️ Build de producción
 Generar build:
 
 yarn build
 Previsualizar build:
 
 yarn preview
-📦 Tecnologías
+
+## 📦 Tecnologías
 React
 
 Vite
