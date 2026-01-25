@@ -1,47 +1,47 @@
-Hooks App
+# 🪝 Hooks App
 
-Proyecto del curso de React Hooks.
+Proyecto del curso de **React Hooks**.
 
-🚀 Ejecutar el proyecto
+---
+
+## 🚀 Ejecutar el proyecto
+
+Instalar dependencias:
+
+```bash
 yarn install
+Levantar el servidor de desarrollo:
+
 yarn dev
-
-
 Abrir en el navegador:
 
 http://localhost:5173
 
 🧪 Ejecutar tests
+Correr todos los tests:
+
 yarn test
-
-
 Modo watch:
 
 yarn test --watch
-
-
 Ejecutar un test específico:
 
-yarn test nombr_del_test
+yarn test GifExpertApp
 
 🏗️ Build de producción
+Generar build:
+
 yarn build
-
-
-Preview del build:
+Previsualizar build:
 
 yarn preview
-
-🧹 Comandos útiles
-yarn lint
-yarn cache clean
-
-📦 Stack
-
+📦 Tecnologías
 React
 
 Vite
 
 Yarn
 
-Jest + Testing Library
+Jest
+
+React Testing Library
