@@ -33,7 +33,7 @@ Ejecutar un test específico:
 
 yarn test GifExpertApp 
 ```
-
+---
 ## 🏗️ Build de producción
 Generar build:
 ```bash
@@ -42,7 +42,7 @@ Previsualizar build:
 
 yarn preview
 ```
-
+---
 ## 📦 Tecnologías
 
 - ⚛️ **React**
