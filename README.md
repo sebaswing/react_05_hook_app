@@ -15,21 +15,24 @@ Levantar el servidor de desarrollo:
 yarn dev
 Abrir en el navegador:
 
-http://localhost:5173
+http://localhost:5173  ```
 
 ---
 
-### 🧪 Ejecutar tests
+## 🧪 Ejecutar tests
+
 Correr todos los tests:
 
+```bash
 yarn test
 Modo watch:
 
 yarn test --watch
 Ejecutar un test específico:
 
-yarn test GifExpertApp
-🏗️ Build de producción
+yarn test GifExpertApp ```
+
+## 🏗️ Build de producción
 Generar build:
 
 yarn build
