@@ -36,18 +36,20 @@ yarn test GifExpertApp
 
 ## 🏗️ Build de producción
 Generar build:
-
+```bash
 yarn build
 Previsualizar build:
 
 yarn preview
-📦 Tecnologías
-React
+```
 
-Vite
+## 📦 Tecnologías
+### React
 
-Yarn
+### Vite
 
-Jest
+### Yarn
 
-React Testing Library
+### Jest
+
+### React Testing Library
