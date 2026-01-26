@@ -12,7 +12,7 @@ Instalar dependencias:
 yarn install
 Levantar el servidor de desarrollo:
 
-yarn dev
+yarn run dev
 Abrir en el navegador:
 
 http://localhost:5173  
