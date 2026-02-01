@@ -19,13 +19,19 @@ export const SimpleForm = () => {
 
     useEffect(() => {
         console.log('useEffect called!');
-    }, []); // Se ejecuta solo una vez al cargar el componente
+    }, []);  // Se ejecuta solo una vez al cargar el componente
 
+    useEffect(() => {
+        console.log('formstate changed!');
+    }, [formState]);
+    useEffect(() => {
+        console.log('email changed!');
+    }, [email]);
     return (
         <> {/* Recordar poner ese contenedor  */}
             <h1>SimpleForm</h1>
             <hr />
-            
+
             <input
                 type="text"
                 className="form-control"
