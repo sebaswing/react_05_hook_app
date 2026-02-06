@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Message } from './Message';
 
 export const SimpleForm = () => {
 
@@ -18,15 +19,15 @@ export const SimpleForm = () => {
     }
 
     useEffect(() => {
-        console.log('useEffect called!');
+        // console.log('useEffect called!');
     }, []);  // Se ejecuta solo una vez al cargar el componente
 
     useEffect(() => {
-        console.log('formstate changed!');
-    }, [formState]);
+        // console.log('formstate changed!');
+    }, [formState]); // Se ejecuta cada vez que cambia el formState 
     useEffect(() => {
-        console.log('email changed!');
-    }, [email]);
+        // console.log('email changed!');
+    }, [email]); // Se ejecuta cada vez que cambia el email
     return (
         <> {/* Recordar poner ese contenedor  */}
             <h1>SimpleForm</h1>
@@ -48,6 +49,16 @@ export const SimpleForm = () => {
                 value={email}
                 onChange={onInputChange}
             />
+
+            {/* {
+                (username=== 'strider2') && <Message/>
+
+            } */}
+
+            {
+                // <Message className="hidden"/> no se desmonta el componente, solo se oculta
+            }
+
         </>
     )
 }
