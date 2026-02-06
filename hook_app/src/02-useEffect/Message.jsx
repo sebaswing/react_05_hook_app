@@ -1,4 +1,4 @@
-import { useEffect, useEffectEvent } from "react"
+import { useEffect } from "react"
 
 export const Message = () => {
 
