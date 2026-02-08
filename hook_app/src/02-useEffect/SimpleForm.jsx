@@ -50,10 +50,10 @@ export const SimpleForm = () => {
                 onChange={onInputChange}
             />
 
-            {/* {
+            {
                 (username=== 'strider2') && <Message/>
 
-            } */}
+            }
 
             {
                 // <Message className="hidden"/> no se desmonta el componente, solo se oculta
