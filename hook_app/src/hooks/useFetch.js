@@ -29,7 +29,7 @@ export const useFetch = ( url ) => {
     const getFetch = async () => {
 
         setLoadingState();
-        
+
         const response = await fetch(url);//'https://pokeapi.co/api/v2/pokemon/647'
 
         //sleep
