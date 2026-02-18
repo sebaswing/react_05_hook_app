@@ -1,5 +1,8 @@
 import { useEffect } from "react";
-import { use, useState } from "react"
+import {  useState } from "react"
+
+const localCache = {};
+
 
 export const useFetch = ( url ) => {
   
@@ -27,13 +30,26 @@ export const useFetch = ( url ) => {
     };
 
     const getFetch = async () => {
+        if(localCache[url]) {
+            console.log('cargando desde cache');
+
+            setState({
+                data:localCache[url],
+                isLoading:false,
+                hasError:false,
+                error:null,
+            });
+
+            return;
+        };
+
 
         setLoadingState();
 
         const response = await fetch(url);//'https://pokeapi.co/api/v2/pokemon/647'
 
         //sleep
-        await new Promise (resolve=> setTimeout(resolve,2000));
+        await new Promise (resolve=> setTimeout(resolve,2000)); // simula una espera de 2 segundos
 
         if(!response.ok) {
             setState({
@@ -55,7 +71,9 @@ export const useFetch = ( url ) => {
             hasError: false,
             errorMessage: null,
         });
+        localCache[url]= data;
         console.log({data}); 
+
     };
     
 
