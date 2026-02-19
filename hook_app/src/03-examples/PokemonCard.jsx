@@ -1,14 +1,37 @@
-import React from 'react'
+import js from '@eslint/js';
+import React, { use } from 'react'
+import { useState } from 'react';
+import { useRef } from 'react';
+import { useLayoutEffect } from 'react';
 
 export const PokemonCard = ({ id,name,sprites=[] }) => {
+
+    const h2Ref=useRef();
+    const [boxSize, setboxSize] = useState({height: 0, width: 0});
+    useLayoutEffect(() => {
+
+        // if (!h2Ref.current) return;
+
+        const { height, width }= h2Ref.current.getBoundingClientRect();
+
+        setboxSize({height, width});
+
+        // console.log({height,width});
+
+    },[name]);
+
+
     return (
         <section
             style={{
             height: 200,
+            display: 'flex',
+            flexDirection: 'row',
             borderRadius: 12
         }}
         >
             <h2
+                ref={h2Ref}
                 className='text-capitalize'
             >
                 #{id}-{name}
@@ -23,6 +46,9 @@ export const PokemonCard = ({ id,name,sprites=[] }) => {
                     />
                 ))}
             </div>
+            <pre>
+                {JSON.stringify(boxSize)}
+            </pre>
         </section>
     )
 }
