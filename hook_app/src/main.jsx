@@ -11,7 +11,8 @@ import './index.css'
 // import { Layout } from './05-useLayoutEffect/Layout.jsx'
 // import { Memorize } from './06-memos/Memorize'
 // import { MemorHook } from './06-memos/MemoHook'
-import { CallbackHook } from './06-memos/CallbackHook'
+// import { CallbackHook } from './06-memos/CallbackHook'
+import { Padre } from './07-tarea-memo/Padre'
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
     // {/* <HooksApp /> */}
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
         // <Layout />
         // <Memorize />
         // <MemorHook />
-        <CallbackHook />
+        // <CallbackHook />
+        <Padre />
   // </StrictMode>,
 )
