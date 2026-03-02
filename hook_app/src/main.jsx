@@ -12,19 +12,20 @@ import './index.css'
 // import { Memorize } from './06-memos/Memorize'
 // import { MemorHook } from './06-memos/MemoHook'
 // import { CallbackHook } from './06-memos/CallbackHook'
+import './08-useReducer/intro-reducer'
 import { Padre } from './07-tarea-memo/Padre'
-createRoot(document.getElementById('root')).render(
-  // <StrictMode>
-    // {/* <HooksApp /> */}
-    // {/* <CounterWithCustomHook /> */}
-    // <SimpleForm />,
-    // <FormWithCustomHook />
-    // <MultipleCustomHooks />
-        // <FocusScreen />
-        // <Layout />
-        // <Memorize />
-        // <MemorHook />
-        // <CallbackHook />
-        <Padre />
-  // </StrictMode>,
-)
+// createRoot(document.getElementById('root')).render(
+//   // <StrictMode>
+//     // {/* <HooksApp /> */}
+//     // {/* <CounterWithCustomHook /> */}
+//     // <SimpleForm />,
+//     // <FormWithCustomHook />
+//     // <MultipleCustomHooks />
+//         // <FocusScreen />
+//         // <Layout />
+//         // <Memorize />
+//         // <MemorHook />
+//         // <CallbackHook />
+//         <Padre />
+//   // </StrictMode>,
+// )
