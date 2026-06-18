@@ -3,6 +3,8 @@ export const todoReducer = (initialState=[],   action) => {
     {
         case 'ABC':
             throw new Error('Action.type = ABC no esta implementada');
+        case 'AddItem':
+            return [...initialState, action.payload];
         default:
             return initialState;
     }
