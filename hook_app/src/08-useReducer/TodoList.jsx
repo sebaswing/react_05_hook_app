@@ -1,7 +1,10 @@
 import React from 'react'
 import { TodoItem } from './TodoItem';
 
-export const TodoList = ({ todos = [] }) => {
+export const TodoList = ({ todos = [],onDeleteTodo }) => {
+    
+
+
   return (
     <ul className="list-group">
         {
@@ -9,8 +12,8 @@ export const TodoList = ({ todos = [] }) => {
                 //nuevo elemento TodoItem -> se le mande la información correcta para que se vea el item 
                 <TodoItem 
                     key={todo.id}
-                    description={todo.description} 
-                    done ={todo.done}
+                    todo={todo}
+                    onDeleteTodo= {onDeleteTodo}
                 />                
             ))
         }
