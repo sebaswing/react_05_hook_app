@@ -48,15 +48,28 @@ export const TodoApp = () => {
         });
     }
 
+    const handleToggleTodo=(id)=>{
+        // console.log({id});
+        dispatch({
+            type:'[TODO] Toggle Todo',
+            payload: id,
+        });
+    }
+
     return (
         <>
-            <h1>TodoApp :10, <small>pendientes:2</small></h1>
+            <h1>TodoApp: 10, <small>pendientes: 2</small></h1>
             <hr />
 
             <div className="row">
                 <div className="col-7">
                     {/*TodoList debe recibir una property que son los TODO nuevo componente*/ }
-                    <TodoList todos={todos} onDeleteTodo={handleDeleteTodo} />
+                    <TodoList 
+                        todos={todos} 
+                        onDeleteTodo={handleDeleteTodo} 
+                        onToggleTodo={handleToggleTodo} 
+
+                    />
                 </div>
 
                 <div className="col-5">
