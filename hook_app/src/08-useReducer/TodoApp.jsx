@@ -23,7 +23,9 @@ const init =() => {
 
 
 export const TodoApp = () => {
-
+    //TODO crear un custom hook para el todoApp
+    //exponer todos, handleNewTodo, handleDeleteTodo, handleToggleTodo
+    //
     const [todos, dispatch] = useReducer(todoReducer, initialState,init);  
     
     useEffect(() => {
