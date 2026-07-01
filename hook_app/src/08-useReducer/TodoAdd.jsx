@@ -7,7 +7,6 @@ export const TodoAdd = ({onNewTodo}) => {
 
     const{description,onInputChange,onResetForm,}=useForm({
         description:'',
-
     });
 
     const onFormSubmit=(event)=>{
