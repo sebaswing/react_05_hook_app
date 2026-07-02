@@ -44,9 +44,15 @@ export const useTodo = (todo) => {
         });
     }
 
+    const todosCount = todos.length;
+    
+    const pendingTodosCount = todos.filter(todo => !todo.done).length;
+
     return{
         todos,
         // ...todos,
+        todosCount,
+        pendingTodosCount,
         handleNewTodo,
         handleDeleteTodo,
         handleToggleTodo,
