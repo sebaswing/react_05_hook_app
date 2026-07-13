@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { MainApp } from './09-useContext/MainApp'
+import { BrowserRouter } from "react-router-dom";
 // import { HooksApp } from './HooksApp.jsx'
 // import { CounterApp } from './01-useState/counterApp.jsx'
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook.jsx'
@@ -18,19 +19,21 @@ import { MainApp } from './09-useContext/MainApp'
 // import { TodoApp } from './08-useReducer/TodoApp'
 
 createRoot(document.getElementById('root')).render(
-//   // <StrictMode>
-//     // {/* <HooksApp /> */}
-//     // {/* <CounterWithCustomHook /> */}
-//     // <SimpleForm />,
-//     // <FormWithCustomHook />
-//     // <MultipleCustomHooks />
-//          // <FocusScreen />
-//          // <Layout />
-//          // <Memorize />
-//          // <MemorHook />
-//          // <CallbackHook />
-            //<TodoApp />
+    <BrowserRouter>
+{/* <StrictMode> */}
+ {/* <HooksApp /> */}
+ {/* <CounterWithCustomHook /> */}
+{/* <SimpleForm />, */}
+{/* <FormWithCustomHook />
+<MultipleCustomHooks />
+<FocusScreen />
+<Layout />
+<Memorize />
+MemorHook />
+   <CallbackHook /> */}
+            {/* //<TodoApp /> */}
             <MainApp/>
-            //<Padre />
-//   // </StrictMode>,
+            {/* //<Padre /> */}
+{/* </StrictMode>, */}
+    </BrowserRouter>
 )
