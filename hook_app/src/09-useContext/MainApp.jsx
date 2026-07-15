@@ -6,7 +6,7 @@ import { LoginPage } from './LoginPage'
 export const MainApp = () => {
   return (
     <>
-        <h1>MainApp</h1>
+        <h1> MainApp</h1>
         <hr/>    
 
 
